@@ -41,6 +41,7 @@ p {
 .card {
     color: white;
     margin: 10px;
+    text-transform: capitalize;
     padding: 10px;
     flex-grow: 1;
     align-items: center;
@@ -49,6 +50,17 @@ p {
     transform: scale(1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+}
+
+ul{
+    text-transform: capitalize;
+    list-style: none;
+}
+.list-item{
+    font-size: 25px;
+}
+.coni{
+    background-color: aliceblue;
 }
 .card:hover{
     cursor: pointer;

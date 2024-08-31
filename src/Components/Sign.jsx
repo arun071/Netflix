@@ -12,8 +12,8 @@ function Sign() {
   
     return (
       <>
-        <div id="sign" className="container-fluid bg-white ">
-        <p>
+        <div id="sign" className="text-light mt-2">
+        <p className="h5">
           Designed By{'  '}
           <a className="link" style={linkStyle} target="_blank" rel="noopener noreferrer" href="https://arun-showcase.web.app/">
             Arun

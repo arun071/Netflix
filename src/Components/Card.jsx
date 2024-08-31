@@ -1,24 +1,30 @@
+import { Link } from "react-router-dom";
+
 function Card(props) {
     const handleImageError = (e) => {
         e.target.src = "leo.jpg";
     };
 
+
     return (
         <>
-            <div class="card" >
-                <img src={props.poster} onError={handleImageError} id="image" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">{props.title}</h5>
-                    <p class="card-text">
-                        Year: {props.year}
-                        <br />
-                        Rating: {props.rating}
-                        <br />
-                        Director: {props.director}
-                        <br />
-                        Runtime: {props.runtime} mins</p>
+            <Link to="/page"  style={{ textDecoration: 'none' }}> {/* Update with the correct route */}
+
+                <div className="card" >
+                    <img src={props.imgUrl} onError={handleImageError} id="image" className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">{props.title}</h5>
+                        <p className="card-text">
+                            Year: {props.year}
+                            <br />
+                            Rating: {props.rating}
+                            <br />
+                            Director: {props.director}
+                            <br />
+                            Runtime: {props.runtime} mins</p>
+                    </div>
                 </div>
-            </div>
+            </Link>
         </>
     );
 }
